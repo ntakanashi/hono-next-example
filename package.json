@@ -1,0 +1,27 @@
+{
+  "name": "test-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "20.12.2",
+    "pnpm": "9.0.2",
+    "npm": "please use pnpm",
+    "yarn": "please use pnpm"
+  },
+  "volta": {
+    "node": "20.12.2",
+    "pnpm": "9.0.2"
+  },
+  "workspaces": [
+    "src/backend",
+    "src/frontend"
+  ],
+  "scripts": {
+    "backend": "pnpm -F \"backend\"",
+    "frontend": "pnpm -F \"frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

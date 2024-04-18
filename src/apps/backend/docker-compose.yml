@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  db:
+    container_name: test-app-db
+    image: postgres:16.1
+    ports:
+      - "5432:5432"
+    volumes:
+      - data:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  data:

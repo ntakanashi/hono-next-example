@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "engines": {
+    "node": "20.12.2"
+  },
+  "volta": {
+    "node": "20.12.2",
+    "pnpm": "9.0.2"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "lint": "biome lint",
+    "lint:apply": "biome lint --apply",
+    "format": "biome format",
+    "format:write": "biome format --write",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:generate": "prisma generate",
+    "prisma:reset": "prisma migrate reset --force",
+    "prisma:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.10.0",
+    "@hono/zod-openapi": "^0.11.0",
+    "@prisma/client": "5.12.1",
+    "dotenv": "^16.4.5",
+    "hono": "^4.2.3",
+    "inversify": "^6.0.2",
+    "prisma": "^5.12.1",
+    "reflect-metadata": "^0.2.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.0",
+    "@hono/swagger-ui": "^0.2.1",
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1"
+  }
+}
