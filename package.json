@@ -5,13 +5,13 @@
   "main": "index.js",
   "engines": {
     "node": "20.12.2",
-    "pnpm": "9.0.2",
+    "pnpm": "9.0.5",
     "npm": "please use pnpm",
     "yarn": "please use pnpm"
   },
   "volta": {
     "node": "20.12.2",
-    "pnpm": "9.0.2"
+    "pnpm": "9.0.5"
   },
   "workspaces": [
     "src/backend",
